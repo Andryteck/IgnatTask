@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/Andryteck/ignatTask/static/css/main.4e5f6750.chunk.css",
+    "main.js": "/Andryteck/ignatTask/static/js/main.09cf04f6.chunk.js",
+    "main.js.map": "/Andryteck/ignatTask/static/js/main.09cf04f6.chunk.js.map",
+    "runtime-main.js": "/Andryteck/ignatTask/static/js/runtime-main.67cd3146.js",
+    "runtime-main.js.map": "/Andryteck/ignatTask/static/js/runtime-main.67cd3146.js.map",
+    "static/js/2.615f733a.chunk.js": "/Andryteck/ignatTask/static/js/2.615f733a.chunk.js",
+    "static/js/2.615f733a.chunk.js.map": "/Andryteck/ignatTask/static/js/2.615f733a.chunk.js.map",
+    "index.html": "/Andryteck/ignatTask/index.html",
+    "precache-manifest.7ae16be5457eb184f126980a270f991a.js": "/Andryteck/ignatTask/precache-manifest.7ae16be5457eb184f126980a270f991a.js",
+    "service-worker.js": "/Andryteck/ignatTask/service-worker.js",
+    "static/css/main.4e5f6750.chunk.css.map": "/Andryteck/ignatTask/static/css/main.4e5f6750.chunk.css.map",
+    "static/js/2.615f733a.chunk.js.LICENSE.txt": "/Andryteck/ignatTask/static/js/2.615f733a.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.67cd3146.js",
+    "static/js/2.615f733a.chunk.js",
+    "static/css/main.4e5f6750.chunk.css",
+    "static/js/main.09cf04f6.chunk.js"
+  ]
+}
