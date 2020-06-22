@@ -1,0 +1,11 @@
+.inputNya {
+    height: 40px;
+    width: 300px;
+    font-family: "Courier New", Courier, monospace;
+    font-size:14px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    background-image: linear-gradient(to bottom right, #fdfefe, #fff);
+    box-shadow: inset 5px 5px 10px #d1d9e6;
+}
