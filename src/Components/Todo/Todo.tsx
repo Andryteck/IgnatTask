@@ -21,7 +21,7 @@ function Todo() {
                     if (t.p === "hight") {
                         return <li key={t.id}>
                             {t.n}
-                            <span>{t.p}</span>
+                            <span className={s.todoItem}>{t.p}</span>
                             <button onClick={() => {deleteTask(t.id)}}>x</button>
                         </li>
                     }

@@ -11,6 +11,6 @@ ul {
 li {
     list-style: none;
 }
-span {
-    margin-left: 50px;
+.todoItem {
+    margin-right: 50px;
 }

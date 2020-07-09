@@ -8,19 +8,19 @@ function EditableSpan(props: PropsType) {
     let [editMode, setEditMode] = useState(false);
 
     function onEnter() {
-        alert('hello')
+
     }
 function activatedEditMode() {
     setEditMode(true)
 }
-    const activateViewMode = () => {
-        setEditMode(false);
-        // props.onChange(title);
-    }
+function deactivateViewMode() {
+    setEditMode(false)
+}
+
     return (
         <>
             {editMode
-                ? <InputNya activateViewMode={activateViewMode} onEnter={onEnter}/>
+                ? <InputNya deactivateViewMode={deactivateViewMode} onEnter={onEnter}/>
                 : <span onDoubleClick={activatedEditMode}>Test</span>
             }
         </>

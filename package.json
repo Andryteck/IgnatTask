@@ -4,6 +4,7 @@
   "private": true,
   "homepage": "https://andryteck.github.io/ignatTask/",
   "dependencies": {
+    "@material-ui/core": "^4.11.0",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
     "@testing-library/user-event": "^7.2.1",
@@ -11,14 +12,18 @@
     "@types/node": "^12.12.42",
     "@types/react": "^16.9.35",
     "@types/react-dom": "^16.9.8",
+    "@types/react-redux": "^7.1.9",
     "@types/react-router-dom": "^5.1.5",
     "@types/uuid": "^8.0.0",
     "antd": "^4.3.5",
     "gh-pages": "^3.1.0",
+    "moment": "^2.27.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
+    "react-redux": "^7.2.0",
     "react-router-dom": "^5.2.0",
     "react-scripts": "3.4.1",
+    "redux": "^4.0.5",
     "typescript": "^3.7.5"
   },
   "scripts": {

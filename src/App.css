@@ -5,7 +5,7 @@
 
 .App {
     text-align: center;
-    height: 100vh;
+    height: 100%;
     background-color: #1f1f20;
     border: 1px solid;
     display: flex;
@@ -54,6 +54,9 @@
     height: 175px;
     border-radius: 10px;
 
+}
+.messageBody span {
+    margin-left: 50px;
 }
 
 .messageBody:after {

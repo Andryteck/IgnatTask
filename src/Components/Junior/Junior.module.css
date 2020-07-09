@@ -1,11 +1,62 @@
 .activeLink {
 
 }
+
 .item {
-    width: 400px;
+    width: 800px;
     height: 500px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+}
+
+.peoples {
+    width: 400px;
+    margin-top: 30px;
+    border: 1px solid red;
+}
+
+.hide {
+    display: none;
+    padding: 2px 3px;
+    margin-left: 8px;
+    width: 130px;
+}
+
+.dateItem:hover .dateItemTooltip {
+    display: block;
+    transition: 0s;
+}
+
+.dateItemTooltip {
+    display: none;
+    background: #C8C8C8;
+    margin-left: 48px;
+    padding: 10px;
+    position: absolute;
+    z-index: 1000;
+    width: 200px;
+    height: 100px;
+    color: black;
+    transition: opacity 6s ease-in-out;
+    border-radius: 10%;
+}
+
+.peoplesItem {
+    margin-left: 30px;
+}
+
+.btns {
+    width: 395px;
+    margin-top: 70px;
+    display: flex;
+    justify-content: space-evenly;
+
+
+}
+
+.btn {
+    width: 60px;
+    height: 30px;
 }
