@@ -6,8 +6,9 @@ import Select from "../Select/Select";
 import Radio from "../Radio/Radio";
 import {useDispatch, useSelector} from "react-redux";
 import {AppRootStateType} from "../../store";
-import {checkAC, downAC, upAC} from "../../reducers/ homeWorkReducer/ homeWorkReducer";
+import {checkAC, downAC, upAC} from "../../redux/reducers/ homeWorkReducer/ homeWorkReducer";
 import {Fade, Tooltip} from "@material-ui/core";
+import {deleteLoadingAC, setLoadingAC} from "../../redux/reducers/loading-reducer/loading-reducer";
 
 
 // type StateType = {
@@ -68,9 +69,11 @@ function Junior() {
         dispatch(checkAC())
     }
 
-    function onOver() {
-
-
+    function setLoading() {
+        dispatch(setLoadingAC())
+        setTimeout(() => {
+            dispatch(deleteLoadingAC())
+        },3000)
     }
 
 
@@ -96,6 +99,7 @@ function Junior() {
                 <button onClick={updateTime}>Update Time</button>
                 <button onClick={resetTime}>Reset Time</button>
             </div>
+            <button onClick={setLoading} className={s.loadingButton}>SET LOADING</button>
         </div>
     )
 }

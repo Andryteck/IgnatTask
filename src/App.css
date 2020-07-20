@@ -161,8 +161,7 @@ a:hover
     height: 32px;
     position: absolute;
     top: -7px;
-    left: 40px;
-
+   
     cursor: pointer;
 
     opacity: 0; /* hide this */

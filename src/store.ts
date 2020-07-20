@@ -1,8 +1,10 @@
 import {combineReducers, createStore} from "redux";
-import {hwReducer} from "./reducers/ homeWorkReducer/ homeWorkReducer";
+import {hwReducer} from "./redux/reducers/ homeWorkReducer/ homeWorkReducer";
+import {loadingReducer} from "./redux/reducers/loading-reducer/loading-reducer";
 
 const rootReducer = combineReducers({
-    peoples: hwReducer
+    peoples: hwReducer,
+    loading: loadingReducer
 
 })
 // непосредственно создаём store

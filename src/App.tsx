@@ -8,23 +8,35 @@ import JuniorPlus from "./Components/Junior+/Junior+";
 import Junior from './Components/Junior/Junior';
 import PreJunior from "./Components/PreJunior/PreJunior";
 import NavBar from './Components/NavBar/NavBar';
+import {AppRootStateType} from "./store";
+import {useSelector} from 'react-redux';
+import {LoadingType} from "./redux/reducers/loading-reducer/loading-reducer";
+import PreLoader from "./Components/Prelouder/Prelouder";
 
+
+// type PropsType = {
+//     store: AppRootStateType
+// }
 
 function App() {
+    let loading = useSelector<AppRootStateType, LoadingType>(state => state.loading.loading)
+    if (loading) {
+        return <PreLoader/>
+    }
     return (
-        <HashRouter>
-            <div className="App">
-                <NavBar />
-                <Route path="/PreJunior" render={() => <PreJunior/>}/>
-                <Route path="/Junior" render={() => <Junior/>}/>
-                <Route path="/Junior+" render={() => <JuniorPlus/>}/>
-                <Dialog/>
-                <Todo/>
-                <Counter/>
-            </div>
-        </HashRouter>
+
+        <div className="App">
+            <NavBar/>
+            <Route path="/PreJunior" render={() => <PreJunior/>}/>
+            <Route path="/Junior" render={() => <Junior/>}/>
+            <Route path="/Junior+" render={() => <JuniorPlus/>}/>
+            <Dialog/>
+            <Todo/>
+            <Counter/>
+        </div>
+
     );
 }
 
 
-export default App;
+export default App
