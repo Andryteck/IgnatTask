@@ -12,6 +12,7 @@ import {AppRootStateType} from "./store";
 import {useSelector} from 'react-redux';
 import {LoadingType} from "./redux/reducers/loading-reducer/loading-reducer";
 import PreLoader from "./Components/Prelouder/Prelouder";
+import {Range} from "./Components/common/Range";
 
 
 // type PropsType = {

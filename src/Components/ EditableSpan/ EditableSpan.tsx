@@ -21,7 +21,7 @@ function deactivateViewMode() {
         <>
             {editMode
                 ? <InputNya deactivateViewMode={deactivateViewMode} onEnter={onEnter}/>
-                : <span onDoubleClick={activatedEditMode}>Test</span>
+                : <span onDoubleClick={activatedEditMode}>EDITABLE SPAN</span>
             }
         </>
     );

@@ -14,7 +14,7 @@ function InputNya(props: InputNyaPropsType) {
 
     return (
         <>
-            <input className={s.inputNya} onKeyPress={onKeyPress}  onBlur={props.deactivateViewMode}  {...restProps} type="text"/>
+            <input className={s.inputNya} onKeyPress={onKeyPress}  onBlur={props.deactivateViewMode} autoFocus={true} {...restProps} type="text"/>
             {error ? <span>{error}</span> : null}
         </>
     );
